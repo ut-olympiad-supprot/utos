@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: takaharulin/utos
+  branch: main
+media_folder: assets/uploads
+public_folder: /utos/assets/uploads
+locale: ja
+collections:
+  - name: pages
+    label: サイトの文章
+    files:
+      - name: homepage
+        label: トップページ・活動理念・イベント
+        file: content/site.json
+        format: json
+        fields:
+          - { label: メインタイトル（1行目）, name: hero_title, widget: string }
+          - { label: メインタイトル（2行目）, name: hero_emphasis, widget: string }
+          - { label: トップの紹介文, name: hero_lead, widget: text }
+          - { label: 活動理念の冒頭文, name: about_lead, widget: text }
+          - { label: 活動理念の本文, name: about_body, widget: text }
+          - { label: イベント欄のタイトル, name: event_title, widget: string }
+          - { label: イベント欄の本文, name: event_body, widget: text }
+          - { label: イベント欄の注記, name: event_note, widget: string, required: false }
+  - name: announcements
+    label: お知らせ
+    files:
+      - name: notice
+        label: イベント・お知らせ
+        file: content/notice.json
+        format: json
+        fields:
+          - { label: お知らせを表示, name: enabled, widget: boolean, default: false }
+          - { label: 見出し, name: title, widget: string }
+          - { label: 本文, name: body, widget: text }
+          - { label: 関連リンクURL, name: url, widget: string, required: false }
+          - { label: リンクボタンの文字, name: link_label, widget: string, required: false }

@@ -1,99 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UTOS - 競技科学を、誰にでも</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1d35">
+  <meta name="description" content="UTOSは「競技科学を、誰にでも」を掲げ、科学オリンピックなどの競技科学との出会いを広げる活動を行う団体です。">
+  <title>UTOS | 競技科学を、誰にでも</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- ヘッダー（上部のメニュー） -->
-    <header>
-        <div class="logo-container">
-            <!-- UTOSのロゴ画像。同じフォルダに「IMG_0267 3.jpg」を置いてください -->
-            <img src="IMG_0267 3.jpg" alt="UTOS Logo" class="logo-img">
-            <span class="logo-text">UTOS</span>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="UTOS トップ"><span class="brand-symbol" aria-hidden="true">✳</span><span>UTOS<span class="brand-dot">.</span></span></a>
+      <nav aria-label="メインメニュー">
+        <a href="#about">UTOSについて</a><a href="#activities">活動内容</a><a href="#events">イベント</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-line"></span> SCIENCE FOR EVERYONE</span>
+          <h1 id="hero-title">競技科学を、<br><em>誰にでも。</em></h1>
+          <p class="hero-lead">知ることから、可能性は広がる。<br>科学に挑戦するきっかけを、もっと多くの人へ。</p>
+          <div class="hero-actions"><a class="button button-primary" href="#about">UTOSを知る <span aria-hidden="true">↗</span></a><a class="button button-outline" href="#activities">活動を見る <span aria-hidden="true">→</span></a></div>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#hero">トップ</a></li>
-                <li><a href="#philosophy">活動理念</a></li>
-                <li><a href="#event">イベント情報</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- ヒーローセクション（トップの大きな画像とキャッチコピー） -->
-    <section id="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>競技科学を、誰にでも</h1>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+          <div class="atom-center">U</div><span class="orbit-point point-one"></span><span class="orbit-point point-two"></span><span class="orbit-point point-three"></span>
+          <span class="art-label label-top">CURIOSITY</span><span class="art-label label-bottom">POSSIBILITY</span>
         </div>
+      </div>
+      <div class="hero-bottom container"><span>EXPLORE THE UNKNOWN</span><a href="#about">SCROLL TO EXPLORE ↓</a></div>
     </section>
-
-    <!-- 活動理念セクション -->
-    <section id="philosophy" class="section-container">
-        <h2 class="section-title">活動理念</h2>
-        <div class="content-box">
-            <h3 class="catchphrase">「競技科学を、誰にでも」</h3>
-            <p>数学、物理、化学、生物、地学、情報etc...<br>
-            高校生には、科学オリンピックや科学の甲子園など<br>
-            幅広い競技科学の門戸が開かれています。</p>
-            
-            <p>しかしながら、<br>
-            「その存在を知らない」「知っているが手が出せない」<br>
-            という人も沢山いることでしょう。</p>
-            
-            <p>団体員の経験では<br>
-            都会の進学校ですらそのような人がおり、地方や非進学校では尚更です。<br>
-            また、学問に対する先入観から男女間での格差も見受けられます。</p>
-            
-            <p>そこで我々UTOSは<br>
-            <strong>「競技科学を、誰にでも」</strong><br>
-            というスローガンを掲げ、SNS発信や高校での講演を通じて<br>
-            そのような格差の是正を目指しています。</p>
-            
-            <p>出会う環境さえあれば、輝くはずの才能が日本中に眠っています。<br>
-            その「きっかけ」を届けるため、私たちは活動を続けていきます。</p>
+    <section class="section about" id="about">
+      <div class="container narrow">
+        <div class="section-heading"><span class="section-index">01 / ABOUT US</span><h2>挑戦するきっかけに、<br><span>格差があってはならない。</span></h2></div>
+        <p class="large-text">数学、物理、化学、生物、地学、情報。<br>科学オリンピックや科学の甲子園など、競技科学には多彩な世界が広がっています。</p>
+        <p>一方で、その存在を知らなかったり、興味はあっても最初の一歩を踏み出せなかったりする人もいます。学ぶ環境や情報へのアクセスによって、挑戦の機会が左右されることがあります。</p>
+        <p>私たちUTOSは「競技科学を、誰にでも」をスローガンに、競技科学を知る機会と、挑戦を始めるきっかけを届けることを目指しています。</p>
+      </div>
+    </section>
+    <section class="section activities" id="activities">
+      <div class="container">
+        <div class="section-heading"><span class="section-index">02 / WHAT WE DO</span><h2>好奇心が動き出す、<br><span>その一歩をつくる。</span></h2></div>
+        <div class="cards">
+          <article class="activity-card"><span class="card-num">01</span><div class="card-icon">◎</div><h3>競技科学を知る</h3><p>科学オリンピックなどの競技の魅力や、学びの入り口をより多くの人に伝えます。</p><span class="card-tag">DISCOVER</span></article>
+          <article class="activity-card"><span class="card-num">02</span><div class="card-icon">↗</div><h3>経験を共有する</h3><p>SNSでの発信や講演を通じて、挑戦した人の経験や考え方を届けます。</p><span class="card-tag">CONNECT</span></article>
+          <article class="activity-card"><span class="card-num">03</span><div class="card-icon">✳</div><h3>挑戦の輪を広げる</h3><p>住んでいる場所や学校に関係なく、一人ひとりが可能性を見つけられる環境を目指します。</p><span class="card-tag">EXPAND</span></article>
         </div>
+      </div>
     </section>
-
-    <!-- イベント情報セクション -->
-    <section id="event" class="section-container bg-light-blue">
-        <h2 class="section-title">イベント情報</h2>
-        <div class="content-box">
-            <h3 class="event-title">現役東大生による<br>競技科学のススメ</h3>
-            <p class="catchphrase">「競技科学を、誰にでも」</p>
-            
-            <ul class="event-details">
-                <li><strong>場所：</strong> 大視聴覚室</li>
-                <li><strong>日時：</strong> 10/31(土) 13:00〜13:50</li>
-                <li><strong>主な対象：</strong> 中三・高一・高二</li>
-            </ul>
-            <p class="note">（中学生・高三の受験相談も大歓迎！）</p>
-            <p class="highlight">特典： 受験相談タイム＆お菓子付き！</p>
-            
-            <div class="event-message">
-                <p>「競技科学って何？」<br>「大学受験との関連性は？」<br>「どんな勉強をしていけばいいの？」</p>
-                <p>そんな疑問に、現役東大生がお答えします。<br>
-                すでに興味がある人も、まだない人も、どなたでもお気軽にご参加ください！<br>
-                等身大の東大生と交流できるチャンスです！</p>
-            </div>
-        </div>
+    <section class="section events" id="events">
+      <div class="container events-grid">
+        <div class="section-heading"><span class="section-index">03 / EVENTS</span><h2>次の出会いが、<br><span>未来を変える。</span></h2><p>UTOSでは、競技科学を身近に感じてもらうための情報発信や講演に取り組んでいます。</p></div>
+        <div class="event-panel"><span class="status-dot"></span><span class="event-kicker">EVENT INFORMATION</span><h3>イベント情報</h3><p>次回イベントの開催日時・参加方法などは、詳細が決まり次第ご案内します。</p><span class="event-note">※ 現在、公開できる確定日程はありません。</span></div>
+      </div>
     </section>
-
-    <!-- ここに新しいセクション（活動報告など）をどんどん追加できます -->
-    <!-- 
-    <section id="new-section" class="section-container">
-        <h2 class="section-title">新しい見出し</h2>
-        <div class="content-box">内容を追加</div>
-    </section>
-    -->
-
-    <!-- フッター -->
-    <footer>
-        <p>&copy; 2026 UTOS All Rights Reserved.</p>
-    </footer>
+    <section class="closing"><div class="container"><span class="section-index">OUR MISSION</span><h2>まだ知らない世界へ。<br><em>一緒に、踏み出そう。</em></h2><p>競技科学を、誰にでも。</p></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#top"><span class="brand-symbol" aria-hidden="true">✳</span> UTOS<span class="brand-dot">.</span></a><p>© 2026 UTOS. All rights reserved.</p><a href="#top">BACK TO TOP ↑</a></div></footer>
 </body>
 </html>

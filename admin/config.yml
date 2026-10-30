@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: takaharulin/utos
+  repo: ut-olympiad-supprot/utos
   branch: main
 media_folder: assets/uploads
 public_folder: /utos/assets/uploads
@@ -35,3 +35,4 @@ collections:
           - { label: 本文, name: body, widget: text }
           - { label: 関連リンクURL, name: url, widget: string, required: false }
           - { label: リンクボタンの文字, name: link_label, widget: string, required: false }
+

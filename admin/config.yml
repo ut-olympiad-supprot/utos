@@ -36,3 +36,25 @@ collections:
           - { label: 関連リンクURL, name: url, widget: string, required: false }
           - { label: リンクボタンの文字, name: link_label, widget: string, required: false }
 
+
+  - name: participant_stories
+    label: 参加者の体験談
+    files:
+      - name: stories
+        label: 体験談の追加・編集
+        file: content/stories.json
+        format: json
+        fields:
+          - name: stories
+            label: 体験談
+            widget: list
+            summary: '{{fields.category}} / {{fields.title}}'
+            fields:
+              - label: 種目
+                name: category
+                widget: select
+                options: [数学オリンピック, 情報オリンピック, 化学グランプリ, 物理チャレンジ, 生物学オリンピック, 地学オリンピック, 地理オリンピック, 脳科学オリンピック, 人工知能オリンピック, 天文学オリンピック, 言語学オリンピック, 原子力科学オリンピック, 科学の甲子園, その他]
+              - { label: タイトル, name: title, widget: string }
+              - { label: 紹介・署名（例：二次選考参加者、匿名可）, name: author, widget: string }
+              - { label: 本文（空行で段落を区切れます）, name: body, widget: text }
+              - { label: サイトに公開する, name: published, widget: boolean, default: false }
